@@ -7,7 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListBox x:Name="lbListBox" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="233,296,233,51"/>
-        <ComboBox x:Name="cmbBoxName" HorizontalAlignment="Center" Margin="0,217,0,0" VerticalAlignment="Top" Width="334"/>
+        <ListBox x:Name="lbLastNames" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="372,63,94,284" SelectionChanged="lbLastNames_SelectionChanged"/>
+        <ComboBox x:Name="cbFirstNames" HorizontalAlignment="Left" Margin="44,64,0,0" VerticalAlignment="Top" Width="231"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="116,21,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="495,21,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="btnDisplayFullName" Content="Display Full Name" HorizontalAlignment="Left" Margin="250,168,0,0" VerticalAlignment="Top" Width="278" Click="btnDisplayFullName_Click"/>
+        <Button x:Name="btnAddNames" Content="Add Names" HorizontalAlignment="Left" Margin="58,319,0,0" VerticalAlignment="Top" Width="203" Click="btnAddNames_Click"/>
+        <Label Content="Add Names" HorizontalAlignment="Left" Margin="125,0,0,0" VerticalAlignment="Center"/>
+        <Label Content="First Name" HorizontalAlignment="Left" Margin="10,232,0,0" VerticalAlignment="Top"/>
+        <Label Content="Last Name" HorizontalAlignment="Left" Margin="10,274,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="90,236,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="90,278,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"/>
+        <Button x:Name="btnRemoveStudentAtIndex" Content="Remove Students At Index" HorizontalAlignment="Left" Margin="433,245,0,0" VerticalAlignment="Top" Width="235" Click="btnRemoveStudentAtIndex_Click"/>
     </Grid>
 </Window>

@@ -32,7 +32,7 @@ Get Selected Item : object item = box.SelectedItem;
 > ***Result: When you run your application, you should see the names appear in your combo box when you click on it.***  
 
 > --- 
-> **Part 2** - Add a List Box, Create a 2nd Global List, Attach it to your List Box  
+> **Part 2** - Add a List Box, Create a 2nd Global List, Attach it to your List Box 
 > `listBoxName.ItemsSource = list;`
 > 1. `Designer: `
 * Add a list box (Name = `lbLastNames).
@@ -43,7 +43,7 @@ Get Selected Item : object item = box.SelectedItem;
 > ***Result: When you run your application, you should see your List Box filled with the Last Names.***  
 
 > --- 
-> **Part 3** - Add A Button, Display Names Using the Selected Index and a MessageBox
+> **Part 3** - Add A Button, Display Names Using the Selected Index and a MessageBox  
 > `int selectedIndex = box.SelectedIndex;`
 >
 > 1. `Designer: ` - 
